@@ -1,10 +1,50 @@
 body{
    background-image: url("indlovu2.jpg");
    background-size: 100%;
-  
-   /* align-items: center;
-   display: flex;
-   justify-content: center; */
+}
+
+header{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav{
+    list-style: none;
+    position: relative;
+    
+}
+.nav>li>a{
+    text-decoration: none;
+    height: 40px;
+    width: 70px;
+    display: flex;
+    background-color: rgb(20, 20, 20);
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+.triangle-right{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    border-top:50px solid transparent ;
+    border-bottom: 250px solid transparent;
+    border-left: 900px solid rgb(61, 61, 60);
+}
+
+.triangle-left{
+    border-top:10px solid transparent ;
+    border-bottom: 50px solid transparent;
+    border-right: 500px solid  rgb(61, 61, 60);
+    margin-right: -180%;
+    margin-top: -32%;
+    z-index: -1;
+
+
+
 }
 
 img{
